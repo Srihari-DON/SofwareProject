@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaStar, FaRegCommentDots, FaPoll } from "react-icons/fa";
+import Link from "next/link";
 
 type Business = {
   id: string;
@@ -59,10 +60,13 @@ export default function BusinessCard({ business }: { business: Business }) {
             <FaPoll />
             <span className="text-gray-700 text-xs">Polls</span>
           </div>
-          {/* Actions (placeholder) */}
-          <button className="ml-auto bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">
+          {/* Actions (View button) */}
+          <Link
+            href={`/business/${business.id}`}
+            className="ml-auto bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow"
+          >
             View
-          </button>
+          </Link>
         </div>
       </div>
     </div>
