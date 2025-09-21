@@ -1,4 +1,10 @@
-// Feed page placeholder
+import MessageTest from "./MessageTest";
+
 export default function FeedPage() {
-  return <div>Feed Page</div>;
+  return (
+    <div>
+      <h1>Feed Page</h1>
+      <MessageTest />
+    </div>
+  );
 }
