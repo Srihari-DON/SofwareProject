@@ -1,4 +1,9 @@
-// Auth page placeholder
+import AuthForm from "./AuthForm";
+
 export default function AuthPage() {
-  return <div>Auth Page</div>;
+  return (
+    <div>
+      <AuthForm />
+    </div>
+  );
 }
