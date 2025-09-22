@@ -32,14 +32,3 @@ export default function RootLayout({
     </html>
   );
 }
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="min-h-screen flex flex-col">
-          <TopNavBar />
-          <main className="flex-1">{children}</main>
-        </div>
-      </body>
-    </html>
-  );
-}
